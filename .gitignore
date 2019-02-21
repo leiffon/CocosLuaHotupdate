@@ -1,0 +1,9 @@
+.DS_Store
+send2mac4hotupdate.sh
+auto_encrypt_upload.sh
+remotectl.sh
+res/update/launch.png
+res/update/opening.atlas
+res/update/opening.json
+res/update/opening.png
+src/app/MyApp.lua
