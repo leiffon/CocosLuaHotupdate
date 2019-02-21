@@ -12,7 +12,7 @@ LoadScene更名为UpdateScene
 
 更新时的背景和进度条资源路径不再写入src/config.lua内，而直接写死在loader/UpdateScene.lua，有变更需求时只需更新updater模块即可或者在preupdate.lua中直接对UpdateScene作调整修改（推荐后者）
 
-本项目基于[基于 quick-cocos2d-x 3.3 的热更新小项目](https://github.com/uhoohei/jw_loader)修改而来，感谢！
+本项目从[基于 quick-cocos2d-x 3.3 的热更新小项目](https://github.com/uhoohei/jw_loader)修改而来，感谢！
 
 ## 要点：
 0. 基于[Quick-Cocos2dx-Community](https://github.com/u0u0/Quick-Cocos2dx-Community)3.6.5版本，不适用于3.7+; Mac平台下运行;
@@ -102,7 +102,7 @@ t测试表示生成更新文件先内部测试是否正常，确认一切正常�
 3）将版本信息VERSION_NAME GAME_ID BRANCH_ID SCRIPT_VERSION等写入update_build/version.txt（包括resindex.txt的md5）
 
 注意：
-实际生产环境下可能会受到运营商网络限制，安卓手机使用数据流量方式访问网络时，从阿里云上下载version.txt总是要耗时20s，可通过将热更新服务器的URL设置CDN加速的方式解决这个问题
+实际生产环境下可能会受到运营商网络限制，安卓手机使用数据流量方式访问网络时，从阿里云上下载version.txt总是要耗时20s，可通过将热更新服务器的URL设置CDN加速的方式解决这个问题
 
 ## 热更的关键参数说明
 
@@ -143,7 +143,7 @@ t测试表示生成更新文件先内部测试是否正常，确认一切正常�
 
 ### 热更背景及进度条资源路径
 文件：loader/UpdateScene.lua
-资源路径在RES表中指定（拷贝已下载文件进度条路径在COPY中指定），统一放在从工程目录res/update目录下，也可通过热更新替换（不过要下次生效）
+资源路径在RES表中指定（拷贝已下载文件进度条路径在COPY中指定），统一放在从工程目录res/update目录下，也可通过热更新替换（不过要下次生效）
 
 注意：所有资源非必须，最低配置为scene.png,update_progress_bg.png，update_progress.png
 
