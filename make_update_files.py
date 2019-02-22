@@ -109,8 +109,8 @@ MAIN_VERSION = VERSION_NAME.split('.')[0]  # 主版本号
 
 # TODO: 修改这里的链接为你的服务端的下载链接
 URLS = {
-  "r": "http://download.xuanxiangkeji.com/hotupdate",
-  "t": "http://download.xuanxiangkeji.com/hotupdate_test",
+  "r": "http://dl.hotupdate.com/release",
+  "t": "http://dl.hotupdate.com/test",
 }
 
 if not sys.argv or len(sys.argv) < 2 or sys.argv[1] not in URLS.keys():
